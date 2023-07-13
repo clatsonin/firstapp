@@ -7,7 +7,7 @@ export default function Home() {
 
   const createImg = async () => {
     const configuration = new Configuration({
-      apiKey: "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",
+      apiKey:process.env.NEXT_PUBLIC_OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
 
